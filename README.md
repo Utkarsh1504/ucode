@@ -2,4 +2,4 @@
 
 Basic compiler env for the future leetcode clone.
 
-![u-code](/public/u-code.png)
+![u-code](/public/ucode.png)
