@@ -133,7 +133,7 @@ const Landing = () => {
           <AiOutlineSetting size={26} />
         </div>
       </div>
-      <div className="flex flex-row space-x-2 items-start py-2">
+      <div className="flex flex-row space-x-2 items-start px-4 py-2">
         <div className="flex flex-col w-full h-full justify-start items-end">
           <CodeEditor
             code={code}
