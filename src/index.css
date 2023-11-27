@@ -2,15 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700;800&family=Poppins:wght@400;600&family=Roboto:wght@300;700&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+
 }
 body {
-  font-family: 'IBM Plex Sans', sans-serif;
+  font-family: 'Ubuntu Mono', 'Roboto', 'Poppins', sans-serif;
   font-weight: 300;
-  font-size: 14px;
+  font-size: 18px;
   background-color: #111;
   color: #fff;
 }

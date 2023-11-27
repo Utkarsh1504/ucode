@@ -133,7 +133,7 @@ const Landing = () => {
           <AiOutlineSetting size={26} />
         </div>
       </div>
-      <div className="flex flex-row space-x-4 items-start px-4 py-4">
+      <div className="flex flex-row space-x-2 items-start py-2">
         <div className="flex flex-col w-full h-full justify-start items-end">
           <CodeEditor
             code={code}
@@ -142,7 +142,7 @@ const Landing = () => {
           />
         </div>
 
-        <div className="right-container flex flex-shrink-0 w-[30%] flex-col">
+        <div className="right-container mt-[-35px] flex flex-shrink-0 w-[30%] flex-col">
           <InputSection
             customInput={customInput}
             setCustomInput={setCustomInput}
@@ -152,7 +152,7 @@ const Landing = () => {
             <button
               onClick={handleCompile}
               disabled={!code}
-              className="px-4 py-2 bg-green-500 text-white rounded-md hover:bg-green-700"
+              className="px-4 py-2 bg-green-500 font-bold text-white rounded-md hover:bg-green-700"
             >
               {processing ? "Running..." : "Run"}
             </button>

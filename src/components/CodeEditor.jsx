@@ -6,7 +6,7 @@ import Editor from "@monaco-editor/react";
 const CodeEditor = ({ onChange, language, code }) => {
   const [value, setValue] = useState(code || "");
 
-  const cppSampleCode = `#include <bits/stdc++.h>
+  const cppSampleCode = `#include<bits/stdc++.h>
 using namespace std;
   
 int main() {
