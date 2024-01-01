@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 const OutputDetails = ({ outputDetails }) => {
   return (
-    <div className="metrics-container flex flex-row gap-5 mt-5">
+    <div className="metrics-container flex flex-row gap-2 mt-5">
       <p className="text-base">
         Status:{""}
         <span className="font-semibold text-green-500 px-2 py-1 rounded-md bg-gray-100">

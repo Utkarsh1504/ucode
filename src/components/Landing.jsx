@@ -14,8 +14,8 @@ import OutputDetails from "./OutputDetails";
 
 const javaDefault = `// default class should be Main
 
-import java.io.*;
 import java.util.*;
+import java.io.*;
 
 public class Main {
   public static void main(String[] args) {
@@ -143,11 +143,11 @@ const Landing = () => {
         </div>
 
         <div className="right-container mt-[-35px] flex flex-shrink-0 w-[30%] flex-col">
+          <OutputSection outputDetails={outputDetails} />
           <InputSection
             customInput={customInput}
             setCustomInput={setCustomInput}
           />
-          <OutputSection outputDetails={outputDetails} />
           <div className="flex flex-col items-start mt-2">
             <button
               onClick={handleCompile}
