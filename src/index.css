@@ -2,21 +2,66 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Inter&family=Open+Sans:wght@300;400;500;700;800&family=Poppins:wght@400;600&family=Roboto:wght@300;700&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-
+:root {
+  font-family: "Open Sans", sans-serif;
+  background: #3d404a;
+  color-scheme: light dark;  
 }
+
 body {
-  font-family: 'Inter', sans-serif;
-  font-weight: 300;
-  font-size: 18px;
-  background-color: #111;
-  color: #fff;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+  overflow-y: hidden;
+
+  --sb-track-color: #3d404a;
+  --sb-thumb-color: #e1e1ffb3;
+  --sb-size: 6px;
 }
-.input-box textarea {
-  font-size: 16px;
+
+.cm-editor {
+  max-height: 93vh;
+}
+
+@media screen and (max-width: 768px) {
+  .cm-editor {
+      max-height: calc(93vh - 60px);
+  }
+
+  .cm-editor .cm-scroller {
+      min-height: calc(93vh - 60px);
+  }
+}
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: 0;
+  cursor: pointer;
+  padding: 0.5rem;
+}
+
+::-webkit-scrollbar {
+  width: var(--sb-size);
+  height: var(--sb-size);
+}
+
+::-webkit-scrollbar-track {
+  background: var(--sb-track-color);
+  border-radius: 5px;
+  height: var(--sb-size);
+  width: var(--sb-size);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--sb-thumb-color);
+  border-radius: 5px;
+  height: var(--sb-size);
+}
+
+@supports not selector(::-webkit-scrollbar) {
+  body {
+      scrollbar-color: var(--sb-thumb-color) var(--sb-track-color);
+  }
 }
